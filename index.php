@@ -17,19 +17,60 @@ for ($i=0; $i <3 ; $i++) {
    echo "<br>"."tab[$i]=".$tab[$i];
 }
 echo "<br>";
-$tab1=array();
-$tab1['cle']="bonjour";
-$tab1[2]="les ";
-$tab1[0]="amis";
+$tab1=array(
+    "cle"=>"bonjour",
+      2=>"lessss ",
+      0=>"amis"
+);
+
 foreach($tab1 as $valeur){
     echo  $valeur;
 }
-$tab2=array("un"=>254,"deux"=>789,"trois"=>"bolbol");
+echo "<br>";
+$tab2=array(
+    "un"=>254,
+    "deux"=>789,
+    "trois"=>"bolbol"
+);
 foreach($tab2 as $cle=>$val){
-    echo"<br>tab2[$cle]:$val<br>";  
+    echo  "<br>".$cle."==>".$val;  
 }
 
-echo" <br>$a $hello";
+echo "<br>";
+$tab3=array(
+    "bilel"=>25,
+    "hanen"=>33,
+    "saif"=>31,
+);
+foreach($tab3 as $nom => $age){
+    echo "<br>" . $nom . "-->" . $age;
+}
+echo "<br>";
+$tab4=array(
+    "bolbol"=>"master",
+    "hanen"=>"license",
+    "saif"=>"bts",
+    "aymen"=>"lysee",
+    "houssem"=>"college"
+);
+echo "les nombres de personne est ".count($tab4)."element's:";
+
+
+foreach ($tab4 as $nom => $education){
+    echo  "<br>". $nom. "==>" .$education;
+
+}
+echo "<br>";
+$i=3;
+while ($i<5) {
+    echo $i."<br>";
+    $i++;
+}
+$j=5;
+do {
+    echo $j."<br>";
+    $j++;
+} while ($j < 10);
     ?>
     
 </body>
